@@ -9,13 +9,13 @@ while true; do
     echo "3. Quit"
     echo ""
 
-    read -p "Please enter your choice (1-3): " choice
+    read -rp "Please enter your choice (1-3): " choice
 
     case $choice in
         1) 
-            read -p "Enter the year: " year
-            read -p "Enter the make: " make
-            read -p "Enter the model: " model
+            read -rp "Enter the year: " year
+            read -rp "Enter the make: " make
+            read -rp "Enter the model: " model
 
             echo "$year:$make:$model" >> my_old_cars
             echo "Car added successfully" 
